@@ -1,0 +1,19 @@
+{
+  "project_name": "Universal AI-PM",
+  "version": "1.0.0",
+  "orchestration": {
+    "sync_script": "scripts/workflow/sync_notion_to_github.ts",
+    "verification_script": "scripts/verify_build.sh",
+    "pm_agent": "agents/project_manager_agent.py"
+  },
+  "task_tracking": {
+    "source": "Notion",
+    "destination": "GitHub Issues",
+    "active_labels": ["strategy-sync", "automated", "task", "feature"]
+  },
+  "patterns": {
+    "core": "/core/shared",
+    "agents": "/agents",
+    "docs": "/docs/blueprints"
+  }
+}

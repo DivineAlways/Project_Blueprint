@@ -1,0 +1,72 @@
+[dotenv@17.2.3] injecting env (19) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Searching for issue in DivineAlways/trading_app...
+Found Issue #1: [Project]Technical Trading Structure: Trader-Driven Refinements
+
+--- BODY START ---
+
+**Source**: [Notion Link](https://www.notion.so/Project-Technical-Trading-Structure-Trader-Driven-Refinements-2f4344ce029080fdae72cda9f215f5cf)
+
+### 📋 Metadata
+- **Status**: In Progress
+
+---
+
+Goal: To refine the existing platform into a clear trading decision-support tool that helps users understand direction, timing, risk, and movement without requiring constant chart monitoring.
+## 1. Chart / Visualization Layer (Confirmation Only)
+
+- Minimalist candlesticks: Add a basic candlestick chart component per symbol.
+- Purpose: Used for visual confirmation of direction and momentum, not deep analysis.
+- Features: Include optional session high/low levels and momentum indicators (e.g., RSI).
+- Constraint: No advanced drawing tools; this is not meant to replace TradingView.
+## 2. Market Activity: Trend, Spread & Volatility
+
+This module provides a technical overview to help users avoid choppy conditions.
+## 3. Risk Context: Calendar & Currency Strength
+
+- Economic Calendar: Lightweight display showing Low, Medium, and High impact events contextually per symbol.
+- Currency Strength: A per-currency overview (Strong, Weak, Neutral) to explain market drivers.
+## 4. App-Like UX & Trust
+
+- Mobile-First Design: UI follows mobile app principles with clean layouts and minimal text.
+- Long-Term Goal: Package as a mobile app (iOS/Android) to increase trust and legitimacy.
+## 5. Language & Copy
+
+- Trading Terminology: Avoid technical AI-style wording.
+- Standard Phrases: Use terms like Bullish/Bearish, Trade allowed/Avoid trade, Late move, and High risk.
+- Priority: Clarity is more important than detailed explanations.
+## 6. Decision-Support Only
+
+- The platform must remain for support only.
+- Output: Provides directional bias, timing quality, and risk warnings.
+- Constraint: No order placement or account integration at this stage.
+## 7. Pair-Specific Logic Engine
+
+- Unique Behavior: Each instrument has its own logic based on session relevance and volatility.
+- Probability States: Uses condition-based states (High, Medium, Low probability) instead of fixed "accuracy percentages".
+## 8. Gold (XAUUSD) as a Separate Asset Class
+
+- Custom Logic: Does not reuse standard Forex logic.
+- Key Factors: High correlation with DXY, news sensitivity, and New York session focus.
+- UI Specifics: Displays Volatility (High/Very High) and strong risk warnings during NY open.
+## 9. “Avoid Trade” Conditions (User Protection)
+
+Explicitly flag when users should NOT trade to protect capital:
+- Low liquidity (off-session).
+- High spread or pre-news windows.
+- Overextended moves (high pip exhaustion/late momentum).
+## 10. Goal: Reduce Chart Monitoring
+
+The system surfaces critical states so traders don't have to watch charts all day:
+- Market bias and Trend strength.
+- Pip activity and Timing quality (early, good, late).
+- Risk levels (news, volatility, spread).
+- Session status with countdowns.
+## Summary (Product Intent)
+
+The platform functions as a professional trading assistant summarizing Direction, Momentum, Cost, and Timing. This version includes the most popular pairs for 2026, with the flexibility to add more features as the platform evolves.
+
+
+
+
+--- BODY END ---
+
